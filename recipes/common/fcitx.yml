@@ -1,0 +1,22 @@
+---
+modules:
+  - type: rpm-ostree
+    remove:
+      - ibus
+      - ibus-anthy
+      - ibus-anthy-python
+      - ibus-chewing
+      - ibus-gtk2
+      - ibus-gtk3
+      - ibus-gtk4
+      - ibus-hangul
+      - ibus-libpinyin
+      - ibus-m17n
+      - ibus-panel
+      - ibus-setup
+      - ibus-typing-booster
+      - ibus-xinit
+    install:
+      - fcitx5
+      - fcitx5-mozc
+      - kcm-fcitx5

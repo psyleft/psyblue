@@ -1,0 +1,7 @@
+---
+modules:
+  - type: brew
+    update-interval: 1d
+    upgrade-interval: 1w
+    nofile-limits: true
+    brew-analytics: false

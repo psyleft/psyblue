@@ -1,0 +1,17 @@
+:PROPERTIES:
+:CREATED: [2025-04-23 Wed 01:33]
+:MODIFIED: [2025-05-06 Tue 20:02]
+:END:
+
+#+title: psyblue
+#+author: Connor Clark
+#+email: connor@psyleft.com
+
+Personalized atomic Linux images
+
+* About
+
+This repository is a work in progress. The goal is to create atomic Linux
+images via blue-build that are highly opinionated, but may be useful to
+others as well. You should have no expectation that anything here is stable
+or will be properly maintained.

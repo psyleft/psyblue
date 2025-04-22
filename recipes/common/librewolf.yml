@@ -1,0 +1,10 @@
+---
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://repo.librewolf.net/librewolf.repo
+    install:
+      - librewolf
+    remove:
+      - firefox
+      - firefox-langpacks

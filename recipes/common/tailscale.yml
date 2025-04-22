@@ -1,0 +1,9 @@
+---
+modules:
+  - type: default-flatpaks
+    system:
+      install:
+        - org.fkoehler.KTailctl
+  - type: rpm-ostree
+    install:
+      - tailscale

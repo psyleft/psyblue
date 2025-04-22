@@ -1,0 +1,37 @@
+---
+name: psyblue-plasma
+description: Custom Plasma image based on uBlue Kinoite.
+
+base-image: ghcr.io/ublue-os/kinoite-main
+image-version: 42
+
+modules:
+  - type: default-flatpaks
+    system:
+      install:
+        - org.kde.gwenview
+        - org.kde.kamoso
+        - org.kde.kcalc
+        - org.kde.kolourpaint
+        - org.kde.okular
+        - org.libreoffice.LibreOffice
+        - org.videolan.VLC
+    user: {}
+  - type: files
+    files:
+      - source: system
+        destination: /
+  - type: rpm-ostree
+    install:
+      - dash
+      - gcc
+      - iwd
+      - make
+      - parallel
+      - stow
+  - type: signing
+  ## Common files
+  - from-file: common/brew.yml
+  - from-file: common/fcitx.yml
+  - from-file: common/librewolf.yml
+  - from-file: common/tailscale.yml

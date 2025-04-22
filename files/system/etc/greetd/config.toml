@@ -1,0 +1,3 @@
+[terminal]
+vt = 1
+command = "tuigreet -i --time --asterisks --remember-session"
