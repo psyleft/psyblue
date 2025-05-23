@@ -6,5 +6,3 @@ modules:
         - com.valvesoftware.Steam
         - net.lutris.Lutris
         - net.davidotek.pupgui2
-        - org.freedesktop.Platform.VulkanLayer.gamescope
-        - org.freedesktop.Platform.VulkanLayer.MangoHud
