@@ -19,7 +19,7 @@ modules:
     user: {}
   - type: files
     files:
-      - source: system
+      - source: system/psyblue-plasma
         destination: /
   - type: rpm-ostree
     install:
