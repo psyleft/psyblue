@@ -28,6 +28,7 @@ modules:
       - iwd
       - make
       - parallel
+      - screen
       - stow
   - type: signing
   ## Common files
