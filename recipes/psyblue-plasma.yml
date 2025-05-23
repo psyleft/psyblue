@@ -33,5 +33,6 @@ modules:
   ## Common files
   - from-file: common/brew.yml
   - from-file: common/fcitx.yml
+  - from-file: common/games.yml
   - from-file: common/librewolf.yml
   - from-file: common/tailscale.yml
