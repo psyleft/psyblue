@@ -21,9 +21,20 @@ modules:
     files:
       - source: system/psyblue-plasma
         destination: /
+  - type: rpm-ostree
+    install:
+      - dash
+      - enchant2-devel
+      - gcc
+      - guile30
+      - iwd
+      - lzip
+      - make
+      - parallel
+      - screen
+      - stow
   - type: signing
   ## Common files
-  - from-file: common/base.yml
   - from-file: common/brew.yml
   - from-file: common/fcitx.yml
   - from-file: common/games.yml
