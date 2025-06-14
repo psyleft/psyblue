@@ -26,7 +26,6 @@ modules:
       - dash
       - enchant2-devel
       - gcc
-      - guile30
       - iwd
       - lzip
       - make
