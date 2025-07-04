@@ -30,6 +30,8 @@ modules:
       - lzip
       - make
       - parallel
+      - qemu
+      - qemu-kvm
       - screen
       - stow
   - type: signing
