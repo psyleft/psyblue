@@ -7,16 +7,17 @@ image-version: 42
 
 modules:
   - type: default-flatpaks
-    system:
-      install:
-        - org.kde.gwenview
-        - org.kde.kamoso
-        - org.kde.kcalc
-        - org.kde.kolourpaint
-        - org.kde.okular
-        - org.libreoffice.LibreOffice
-        - org.videolan.VLC
-    user: {}
+    configurations:
+      - scope: system
+        notify: false
+        install:
+          - org.kde.gwenview
+          - org.kde.kamoso
+          - org.kde.kcalc
+          - org.kde.kolourpaint
+          - org.kde.okular
+          - org.libreoffice.LibreOffice
+          - org.videolan.VLC
   - type: files
     files:
       - source: system/psyblue-plasma

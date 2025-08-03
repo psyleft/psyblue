@@ -1,8 +1,10 @@
 ---
 modules:
   - type: default-flatpaks
-    system:
-      install:
-        - com.valvesoftware.Steam
-        - net.lutris.Lutris
-        - net.davidotek.pupgui2
+    configurations:
+      - scope: system
+        notify: false
+        install:
+          - com.valvesoftware.Steam
+          - net.lutris.Lutris
+          - net.davidotek.pupgui2
