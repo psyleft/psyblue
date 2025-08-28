@@ -36,6 +36,10 @@ modules:
       - screen
       - stow
   - type: signing
+  - type: systemd
+    system:
+      disabled:
+        - wpa_supplicant.service
   ## Common files
   - from-file: common/brew.yml
   - from-file: common/fcitx.yml
