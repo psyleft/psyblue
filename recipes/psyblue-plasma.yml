@@ -22,19 +22,20 @@ modules:
     files:
       - source: system/psyblue-plasma
         destination: /
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - dash
-      - enchant2-devel
-      - gcc
-      - iwd
-      - lzip
-      - make
-      - parallel
-      - qemu
-      - qemu-kvm
-      - screen
-      - stow
+      packages:
+        - dash
+        - enchant2-devel
+        - gcc
+        - iwd
+        - lzip
+        - make
+        - parallel
+        - qemu
+        - qemu-kvm
+        - screen
+        - stow
   - type: signing
   - type: systemd
     system:

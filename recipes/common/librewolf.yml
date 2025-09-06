@@ -1,12 +1,13 @@
 ---
 modules:
-  - type: rpm-ostree
+  - type: dnf
     repos:
-      - https://repo.librewolf.net/librewolf.repo
-    keys:
-      - https://repo.librewolf.net/pubkey.gpg
+      files:
+        - https://repo.librewolf.net/librewolf.repo
     install:
-      - librewolf
+      packages:
+        - librewolf
     remove:
-      - firefox
-      - firefox-langpacks
+      packages:
+        - firefox
+        - firefox-langpacks

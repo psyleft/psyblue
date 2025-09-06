@@ -6,6 +6,7 @@ modules:
         notify: false
         install:
           - org.fkoehler.KTailctl
-  - type: rpm-ostree
+  - type: dnf
     install:
-      - tailscale
+      packages:
+        - tailscale
