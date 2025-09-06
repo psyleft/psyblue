@@ -11,6 +11,7 @@ modules:
       - scope: system
         notify: false
         install:
+          - org.kde.arianna
           - org.kde.gwenview
           - org.kde.kamoso
           - org.kde.kcalc
