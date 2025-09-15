@@ -33,6 +33,7 @@ modules:
         - lzip
         - make
         - parallel
+        - rlwrap
         - qemu
         - qemu-kvm
         - screen
