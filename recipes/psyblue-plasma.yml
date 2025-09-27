@@ -38,6 +38,10 @@ modules:
         - qemu-kvm
         - screen
         - stow
+        ## Desktop
+        - akonadi
+        - kdepim-runtime
+        - merkuro
   - type: signing
   - type: systemd
     system:
