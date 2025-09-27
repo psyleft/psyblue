@@ -39,6 +39,7 @@ modules:
         - stow
         ## Desktop
         - akonadi
+        - kdepim-addons
         - kdepim-runtime
         - merkuro
   - type: signing
