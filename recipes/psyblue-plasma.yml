@@ -26,11 +26,10 @@ modules:
   - type: dnf
     install:
       packages:
+        ## Utilities
         - dash
-        - enchant2-devel
         - gcc
         - iwd
-        - lzip
         - make
         - parallel
         - rlwrap
