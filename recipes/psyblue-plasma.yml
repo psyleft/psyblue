@@ -3,7 +3,7 @@ name: psyblue-plasma
 description: Custom Plasma image based on uBlue Kinoite.
 
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 42
+image-version: 43
 
 modules:
   - type: default-flatpaks
@@ -49,6 +49,5 @@ modules:
         - wpa_supplicant.service
   ## Common files
   - from-file: common/brew.yml
-  - from-file: common/games.yml
   - from-file: common/librewolf.yml
   - from-file: common/tailscale.yml
