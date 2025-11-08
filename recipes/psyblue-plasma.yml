@@ -26,7 +26,6 @@ modules:
   - type: dnf
     install:
       packages:
-        ## Utilities
         - dash
         - gcc
         - iwd
@@ -37,6 +36,7 @@ modules:
         - qemu-kvm
         - screen
         - stow
+        - wine
         ## Desktop
         - akonadi
         - kdepim-addons
