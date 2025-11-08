@@ -19,10 +19,6 @@ modules:
           - org.kde.okular
           - org.libreoffice.LibreOffice
           - org.videolan.VLC
-  - type: files
-    files:
-      - source: system/psyblue-plasma
-        destination: /
   - type: dnf
     install:
       packages:
@@ -37,11 +33,10 @@ modules:
         - screen
         - stow
         - wine
-        ## Desktop
-        - akonadi
-        - kdepim-addons
-        - kdepim-runtime
-        - merkuro
+  - type: files
+    files:
+      - source: system/psyblue-plasma
+        destination: /
   - type: signing
   - type: systemd
     system:
@@ -50,4 +45,5 @@ modules:
   ## Common files
   - from-file: common/brew.yml
   - from-file: common/librewolf.yml
+  - from-file: common/merkuro.yml
   - from-file: common/tailscale.yml

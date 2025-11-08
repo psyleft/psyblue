@@ -1,0 +1,9 @@
+---
+modules:
+  - type: dnf
+    install:
+      packages:
+        - akonadi
+        - kdepim-addons
+        - kdepim-runtime
+        - merkuro
