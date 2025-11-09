@@ -24,6 +24,7 @@ modules:
       packages:
         - dash
         - gcc
+        - gnupg2-scdaemon
         - iwd
         - make
         - parallel
