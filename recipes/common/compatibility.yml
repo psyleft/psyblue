@@ -1,0 +1,9 @@
+---
+modules:
+  - type: dnf
+    install:
+      packages:
+        - qemu
+        - qemu-kvm
+        - wine
+        - winetricks

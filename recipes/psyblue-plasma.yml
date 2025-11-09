@@ -28,11 +28,8 @@ modules:
         - make
         - parallel
         - rlwrap
-        - qemu
-        - qemu-kvm
         - screen
         - stow
-        - wine
   - type: files
     files:
       - source: system/psyblue-plasma
@@ -44,6 +41,7 @@ modules:
         - wpa_supplicant.service
   ## Common files
   - from-file: common/brew.yml
+  - from-file: common/compatibility.yml
   - from-file: common/librewolf.yml
   - from-file: common/merkuro.yml
   - from-file: common/tailscale.yml
