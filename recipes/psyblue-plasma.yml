@@ -23,6 +23,7 @@ modules:
     install:
       packages:
         - dash
+        - fortune-mod
         - gcc
         - gnupg2-scdaemon
         - iwd
