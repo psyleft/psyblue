@@ -28,10 +28,12 @@ modules:
         - gnupg2-scdaemon
         - iwd
         - make
+        - mpv
         - parallel
         - rlwrap
         - screen
         - stow
+        - yt-dlp
         - zenity
   - type: files
     files:
