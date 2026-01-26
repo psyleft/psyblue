@@ -11,9 +11,9 @@ modules:
       - scope: system
         notify: false
         install:
+          - org.gnome.Snapshot
           - org.kde.arianna
           - org.kde.gwenview
-          - org.kde.kamoso
           - org.kde.kcalc
           - org.kde.kolourpaint
           - org.kde.okular
