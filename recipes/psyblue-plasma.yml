@@ -44,7 +44,8 @@ modules:
         - wpa_supplicant.service
   ## Common files
   - from-file: common/brew.yml
-  - from-file: common/compatibility.yml
+  - from-file: common/foreign.yml
+  - from-file: common/gaming.yml
   - from-file: common/librewolf.yml
   - from-file: common/merkuro.yml
   - from-file: common/tailscale.yml
