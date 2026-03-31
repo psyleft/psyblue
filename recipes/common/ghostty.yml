@@ -1,0 +1,9 @@
+---
+modules:
+  - type: dnf
+    repos:
+      copr:
+        - scottames/ghostty
+    install:
+      packages:
+        - ghostty
