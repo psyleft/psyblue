@@ -3,7 +3,7 @@ name: psyblue-plasma
 description: Custom Plasma image based on uBlue Kinoite.
 
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 43
+image-version: 44
 
 modules:
   - type: default-flatpaks
