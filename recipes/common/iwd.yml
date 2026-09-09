@@ -1,0 +1,16 @@
+---
+modules:
+  - type: dnf
+    install:
+      packages:
+        - iwd
+
+  - type: files
+    files:
+      - source: common/iwd
+        destination: /
+
+  - type: systemd
+    system:
+      disabled:
+        - wpa_supplicant.service

@@ -19,6 +19,7 @@ modules:
           - org.kde.okular
           - org.libreoffice.LibreOffice
           - org.videolan.VLC
+
   - type: dnf
     install:
       packages:
@@ -27,7 +28,6 @@ modules:
         - fortune-mod
         - gcc
         - gnupg2-scdaemon
-        - iwd
         - make
         - mpv
         - parallel
@@ -36,19 +36,20 @@ modules:
         - stow
         - yt-dlp
         - zenity
+
   - type: files
     files:
-      - source: system/psyblue-plasma
+      - source: psyblue-plasma
         destination: /
+
   - type: signing
-  - type: systemd
-    system:
-      disabled:
-        - wpa_supplicant.service
+
   ## Common files
   - from-file: common/brew.yml
+  - from-file: common/dns-fix.yml
   - from-file: common/foreign.yml
-  - from-file: common/gaming.yml
+  - from-file: common/iwd.yml
   - from-file: common/librewolf.yml
   - from-file: common/merkuro.yml
+  - from-file: common/steam.yml
   - from-file: common/tailscale.yml

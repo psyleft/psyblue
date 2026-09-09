@@ -6,6 +6,7 @@ modules:
         notify: false
         install:
           - org.fkoehler.KTailctl
+
   - type: dnf
     install:
       packages:

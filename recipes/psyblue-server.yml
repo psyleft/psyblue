@@ -19,10 +19,13 @@ modules:
         - unar
         - vim-enhanced
         - wget
+
   - type: files
     files:
-      - source: system/psyblue-server
+      - source: psyblue-server
         destination: /
+
   - type: signing
+
   ### Common files
-  # - from-file: common/nvidia.yml
+  - from-file: common/dns-fix.yml

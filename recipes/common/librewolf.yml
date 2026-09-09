@@ -11,3 +11,8 @@ modules:
       packages:
         - firefox
         - firefox-langpacks
+
+  - type: files
+    files:
+      - source: common/librewolf
+        destination: /

@@ -1,0 +1,6 @@
+---
+modules:
+  - type: files
+    files:
+      - source: common/dns-fix
+        destination: /
