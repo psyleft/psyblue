@@ -1,0 +1,28 @@
+---
+name: psyblue-server
+description: Custom server image based on uBlue uCore
+
+base-image: ghcr.io/ublue-os/ucore
+image-version: stable
+
+modules:
+  - type: dnf
+    install:
+      packages:
+        - dash
+        - dtach
+        - htop
+        - make
+        - parallel
+        - screen
+        - stow
+        - unar
+        - vim-enhanced
+        - wget
+  - type: files
+    files:
+      - source: system/psyblue-server
+        destination: /
+  - type: signing
+  ### Common files
+  # - from-file: common/nvidia.yml
