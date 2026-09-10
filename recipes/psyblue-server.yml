@@ -22,7 +22,7 @@ modules:
 
   - type: files
     files:
-      - source: psyblue-server
+      - source: system/psyblue-server
         destination: /
 
   - type: signing
