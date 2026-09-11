@@ -1,0 +1,11 @@
+---
+module:
+  - type: dnf
+    install:
+      packages:
+        - shadow-utils
+
+  - type: files
+    files:
+      - source: common/guix
+        destination: /
