@@ -1,5 +1,5 @@
 ---
-module:
+modules:
   - type: dnf
     install:
       packages:
