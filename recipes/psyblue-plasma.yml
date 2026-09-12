@@ -40,7 +40,6 @@ modules:
   - type: signing
 
   ## Common files
-  - from-file: common/brew.yml
   - from-file: common/dns-fix.yml
   - from-file: common/foreign.yml
   - from-file: common/guix.yml
