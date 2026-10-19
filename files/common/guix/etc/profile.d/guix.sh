@@ -5,12 +5,13 @@
 
 # Source user's current guix and guix profile
 GUIX_PROFILE="$HOME/.config/guix/current"
-if [ -d "$GUIX_PROFILE" ]; then
-    . "$GUIX_PROFILE/etc/profile"
+if [ -L "$GUIX_PROFILE" ]; then
+    export PATH="$GUIX_PROFILE/bin${PATH:+:}$PATH"
+    export INFOPATH="$GUIX_PROFILE/share/info:${INFOPATH:+:}$INFOPATH"
 fi
 
 GUIX_PROFILE="$HOME/.guix-profile"
-if [ -d "$GUIX_PROFILE" ]; then
+if [ -L "$GUIX_PROFILE" ]; then
     . "$GUIX_PROFILE/etc/profile"
 fi
 
