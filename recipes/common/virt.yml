@@ -5,5 +5,3 @@ modules:
       packages:
         - qemu
         - qemu-kvm
-        - wine
-        - winetricks

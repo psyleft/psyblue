@@ -29,22 +29,19 @@ modules:
         - gcc
         - gnupg2-scdaemon
         - make
-        - mpv
         - parallel
         - rlwrap
         - screen
         - stow
-        - yt-dlp
-        - zenity
 
   - type: signing
 
   ## Common files
   - from-file: common/dns-fix.yml
-  - from-file: common/foreign.yml
   - from-file: common/guix.yml
   - from-file: common/iwd.yml
   - from-file: common/librewolf.yml
   - from-file: common/merkuro.yml
   - from-file: common/steam.yml
   - from-file: common/tailscale.yml
+  - from-file: common/virt.yml
